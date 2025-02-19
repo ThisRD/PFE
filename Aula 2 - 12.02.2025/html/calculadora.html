@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/calculadora.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calculator">
+            <div class="result">
+                <input id="result" type="text" disabled>
+            </div>
+
+            <div class="calcIdent">
+                <button id="btnOff" class="btnsEx"></button disabled>
+                <button id="btnOn" class="btnsEx"></button disabled>
+                <button id="btnDiv" class="btns" onclick="add('/')">/</button>
+                <button id="btnDel" class="btns" onclick="clearCalculator()">⌫</button>
+
+            </div>
+            <div class="calcIdent">
+                <button id="btn7" class="btns" onclick="add('7')">7</button>
+                <button id="btn8" class="btns" onclick="add('8')">8</button>
+                <button id="btn9" class="btns" onclick="add('9')">9</button>
+                <button id="btnMult" class="btns" onclick="add('*')">x</button>
+            </div>
+            <div class="calcIdent">
+                <button id="btn4" class="btns" onclick="add('4')">4</button>
+                <button id="btn5" class="btns" onclick="add('5')">5</button>
+                <button id="btn6" class="btns" onclick="add('6')">6</button>
+                <button id="btnSub" class="btns" onclick="add('-')">-</button>
+            </div>
+            <div class="calcIdent">
+                <button id="btn1" class="btns" onclick="add('1')">1</button>
+                <button id="btn2" class="btns" onclick="add('2')">2</button>
+                <button id="btn3" class="btns" onclick="add('3')">3</button>
+                <button id="btnAdd" class="btns" onclick="add('+')">+</button>
+            </div>
+            <div class="calcIdent">
+                <button id="btnInvert" class="btns">+/-</button>
+                <button id="btn0" class="btns" onclick="add('0')">0</button>
+                <button id="btnPoint" class="btns" onclick="add('.')">.</button>
+                <button id="btnResult" class="btns" onclick="calculate()">=</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="/js/calculadora.js"></script>
+
+</html>
