@@ -12,8 +12,8 @@ var somQuebra = document.querySelector('#quebrar');
 let funcaoAtiva = true
 
 btnOn.addEventListener('click', () => {
-
     if (!funcaoAtiva) return;
+    
     img.src = './img/ligada.jpg';
     topImg.src = './img/beijaflor.gif';
     corpo.classList.remove('noite')
@@ -42,7 +42,6 @@ btnOff.addEventListener('click', () => {
 img.addEventListener('mouseover', () => {
     if (!funcaoAtiva) return;
 
-
     img.src = './img/ligada.jpg';
     topImg.src = './img/beijaflor.gif';
     corpo.classList.remove('noite')
@@ -54,7 +53,6 @@ img.addEventListener('mouseover', () => {
 
 img.addEventListener('mouseout', () => {
     if (!funcaoAtiva) return;
-
 
     img.src = './img/desligada.jpg';
     topImg.src = './img/olhos.gif';
@@ -79,6 +77,7 @@ img.addEventListener('click', () => {
         funcaoAtiva = false;
         corpo.classList.add('noite')
         topImg.src = './img/olhos.gif'
+
         // btnOff.disabled = true;
         // btnOn.disabled = true;
     }
