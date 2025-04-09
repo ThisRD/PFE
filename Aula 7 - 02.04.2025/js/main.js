@@ -60,6 +60,7 @@ window.addEventListener('load', () => {
                 console.log(erro);
             }) //o que acontece se houver erro na definição da posição
     }
+    
     function mostraMapa(lat, long){
         console.log('mostraMapa', lat, long)
     

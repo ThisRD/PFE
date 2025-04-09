@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue !important;
+
+}
+
+form{
+    width: 300px !important;
+    /* max-width: 500px !important; */
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(123, 152, 177);
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
