@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <div class="container">
+        <div id="esquerda">
+            <div class="list" draggable="true">
+                <img src="./img/drag_drop_icon.png" alt="">
+                <span>List Item 1</span>
+            </div>
+            <div class="list" draggable="true">
+                <img src="./img/drag_drop_icon.png" alt="">
+                <span>List Item 2</span>
+            </div>
+            <div class="list" draggable="true">
+                <img src="./img/drag_drop_icon.png" alt="">
+                <span>List Item 3</span>
+            </div>
+            <div class="list" draggable="true">
+                <img src="./img/drag_drop_icon.png" alt="">
+                <span>List Item 4</span>
+            </div>
+        </div>
+        <div id="direita">
+
+
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    
+    <!-- div.container>div.esqueda>(div.list[draggable="true"]>(img[src="./img/drag_drop_icon.png"])+span{List Item $})*4+div.direita -->
+</body>
+</html>
