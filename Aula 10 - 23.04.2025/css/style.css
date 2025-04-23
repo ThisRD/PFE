@@ -1,0 +1,44 @@
+.invisible{
+    display: none;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /* min-height: 100vh; */
+    /* min-width: 800px; */
+    min-height: 700px;
+    /* max-height: 700px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#identBtn{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    min-width: 100%;
+    /* width: 100vh; */
+    /* margin-right: -100px; */
+    
+}

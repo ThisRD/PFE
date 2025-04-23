@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>PRODUTOS FAKESTORE</h1>
+    <br>
+    <div class="container">
+        <div id="identBtn">
+    
+            <div  class="btn-group" role="group" aria-label="Basic example">
+                <button id="btnConsulta" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >FILTRAR</button>
+                <button id="btnLimpar" type="button" class="btn btn-secondary" >LIMPAR</button>  
+                <button id="btnGerar" type="button" class="btn btn-success" >GERAR PDF</button>  
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Filtrar Produto</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="" class="form-label">PRODUTO A ATÉ PRODUTO B </label>
+                        <div class="input-group">
+                            <!-- <span class="input-group-text">First and last name</span> -->
+                            <input id="inicioFilter" type="text" aria-label="First name" class="form-control" >
+                            <input id="fimFilter" type="text" aria-label="Last name" class="form-control">
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btnEstado" type="button" class="btn btn-success" data-bs-dismiss="modal">FILTRAR</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">PRODUTO</th>
+                    <th scope="col">IMAGEM</th>
+                    <th scope="col">PREÇO</th>
+                    <th scope="col">CATEGORIA</th>
+                    <th scope="col">AVALIAÇÃO</th>
+                    <th scope="col">ESTOQUE</th>
+                    <th scope="col">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+    <img src="" alt="">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
+</body>
+
+</html>
